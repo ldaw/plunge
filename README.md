@@ -40,7 +40,7 @@ Plunge consists of only 13 supported characters, each corresponding to a simple 
 | Char | Description | Pseudocode |
 |:----:|:-----------:|:----------:|
 |   #  |execute next IFF acc is even|```skipFlag = isOdd(acc)```|
-|   >  |execute next IFF acc is greater than depth|```skipFlag = !(acc > depth)```|
+|   ~  |execute next IFF acc is greater than depth|```skipFlag = !(acc > depth)```|
 
 ### Category 4: Miscellaneous operations
 * These operations don't do much
