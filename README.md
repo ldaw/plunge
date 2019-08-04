@@ -55,7 +55,7 @@ Build interpreter: ```g++ plunge.cpp```
 
 Run program: ```./plunge.o hello.plunge``` or ```plunge.exe hello.plunge```
 
-### Example Hello World (hello.plunge)
+### Example Hello World ([hello.plunge](https://github.com/ldaw/plunge/blob/master/hello.plunge))
 * This is far from the most efficient hello world program, but it serves to give a demonstration of how plunge looks in action:
 ```))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))v
 .......:v
@@ -100,4 +100,4 @@ v(.....^(((((((((((((((#
 v((..................^((((((((((((((#
 v(((.............................^(((((((((((.#
 v:;)))))))))))))))))))))))))))))))):;(((((((..^
-~^)```
+~^)
