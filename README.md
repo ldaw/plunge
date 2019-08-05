@@ -5,9 +5,9 @@ A "simple" funge-like esoteric language, along with interpreter written in C++
 
 Plunge execution begins with the cursor at the top left of a file (x = 0, depth = 0). The cursor reads the character at its current position, executes it, and then moves.
 
-The cursor generally moves one position to the right (increasing x), unless otherwise specified. The cursor can wrap in all directions.
+The cursor generally moves one position to the right (increasing x), unless otherwise specified. The cursor can wrap in all directions. The cursor does not shift up/down a line unless explicitly instructed.
 
-Newlines are allowed, all other non-instruction characters (including spaces) are unsupported.
+The only "variables" in Plunge are the single accumulator, and the current cursor depth. There is no stack. While this design choice limits the functionality of Plunge, it also allows for very interesting program designs.
 
 ## Instruction overview
 
@@ -57,7 +57,8 @@ Run program: ```./plunge.o hello.plunge``` or ```plunge.exe hello.plunge```
 
 ### Example Hello World ([hello.plunge](https://github.com/ldaw/plunge/blob/master/hello.plunge))
 * This is far from the most efficient hello world program, but it serves to give a demonstration of how plunge looks in action:
-```))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))v
+```
+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))v
 .......:v
 ........))))))))))))))))))))))))))))):)))))))::))):v
 ;v
